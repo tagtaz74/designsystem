@@ -237,15 +237,19 @@ a { color: inherit; text-decoration: none; }
   border-radius: var(--radius-md);
   overflow: hidden;
   border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
 }
 
 .swatch-color {
   height: 72px;
+  flex-shrink: 0;
 }
 
 .swatch-info {
   padding: var(--sp-3);
   background: var(--color-surface-2);
+  flex: 1;
 }
 
 .swatch-name {
